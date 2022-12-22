@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "945003835795",
+    "project_id": "travelguide-997f8",
+    "storage_bucket": "travelguide-997f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945003835795:android:1748a1a23322f0a9fd7866",
+        "android_client_info": {
+          "package_name": "com.ahmetoruc.deneme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "945003835795-ucqvu0ubjt3kjbinmtmjr84v8jd1orj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKuX7E57zAqyL4m-GNlKPMq4UxktXsYQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "945003835795-ucqvu0ubjt3kjbinmtmjr84v8jd1orj3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

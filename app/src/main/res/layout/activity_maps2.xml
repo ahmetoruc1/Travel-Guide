@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.MapsActivity2"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="-246dp" />
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardView_Restoran"
+
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+
+        android:layout_marginEnd="3dp"
+        android:elevation="16dp"
+        app:cardCornerRadius="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardView_Otel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_View_Restoranlar"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="10dp"
+            android:onClick="filterClick"
+            android:text="Restoranlar"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardView_Otel"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+
+        android:layout_marginTop="5dp"
+        android:elevation="16dp"
+        app:cardCornerRadius="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardView_Kafe"
+        app:layout_constraintStart_toEndOf="@+id/cardView_Restoran"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_View_Oteller"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="10dp"
+            android:onClick="filterClick"
+            android:text="Oteller"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardView_Kafe"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+
+        android:layout_marginTop="5dp"
+
+        android:elevation="16dp"
+        app:cardCornerRadius="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardView_Eczane"
+        app:layout_constraintStart_toEndOf="@+id/cardView_Otel"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_View_Kafeler"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="10dp"
+            android:onClick="filterClick"
+            android:text="Kafeler"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardView_Eczane"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:elevation="16dp"
+        app:cardCornerRadius="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/cardView_Tarihi_Mekan"
+        app:layout_constraintStart_toEndOf="@+id/cardView_Kafe"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_View_Eczaneler"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="10dp"
+            android:onClick="filterClick"
+            android:text="Eczaneler"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardView_Tarihi_Mekan"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:elevation="16dp"
+        app:cardCornerRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView_Eczane"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_View_Tarihi_Mekanlar"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="10dp"
+            android:onClick="filterClick"
+            android:text="Tarihi Mekanlar"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
